@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:id="@+id/Up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5DD0C0">
+    </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/Down"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#5DD0C0"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnadd"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#5DD0C0"
+            android:onClick="Add_bt"
+            android:src="@drawable/add"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:cornerRadius="50dp"
+            app:strokeColor="#7D8BE4"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/BD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Down"
+        android:layout_below="@+id/Up"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+    </ListView>
+
+
+</RelativeLayout>
