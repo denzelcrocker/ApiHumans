@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/zelen/Desktop/ApiHumans/app/src/main/res/drawable/styles.xml" value="0.353" />
         <entry key="..\:/Users/zelen/Desktop/ApiHumans/app/src/main/res/layout/activity_add_timetable.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/zelen/Desktop/ApiHumans/app/src/main/res/layout/activity_check_timetable.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/zelen/Desktop/ApiHumans/app/src/main/res/layout/activity_edit_timetable.xml" value="0.18" />
-        <entry key="..\:/Users/zelen/Desktop/ApiHumans/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/zelen/Desktop/ApiHumans/app/src/main/res/layout/activity_mask.xml" value="0.1" />
+        <entry key="..\:/Users/zelen/Desktop/ApiHumans/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/zelen/Desktop/ApiHumans/app/src/main/res/layout/activity_mask.xml" value="0.25" />
       </map>
     </option>
   </component>

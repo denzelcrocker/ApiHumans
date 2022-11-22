@@ -63,7 +63,7 @@ public class Edit_timetable extends AppCompatActivity {
         }
         else{
             return BitmapFactory.decodeResource(Edit_timetable.this.getResources(),
-                    R.drawable.cocktail);
+                    R.drawable.human);
         }
 
     }

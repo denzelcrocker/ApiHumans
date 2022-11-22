@@ -48,7 +48,7 @@ public class Adapter extends BaseAdapter {
         InputStream input = ContactsContract.Contacts.openContactPhotoInputStream(cr, uri);
         if (input == null) {
             Resources res = context.getResources();
-            return BitmapFactory.decodeResource(res, R.drawable.cocktail);
+            return BitmapFactory.decodeResource(res, R.drawable.human);
         }
         return BitmapFactory.decodeStream(input);
     }
@@ -64,7 +64,7 @@ public class Adapter extends BaseAdapter {
         else
         {
 
-            return BitmapFactory.decodeResource(nContext.getResources(), R.drawable.cocktail);
+            return BitmapFactory.decodeResource(nContext.getResources(), R.drawable.human);
         }
     }
 
@@ -73,11 +73,11 @@ public class Adapter extends BaseAdapter {
         View v = View.inflate(nContext,R.layout.activity_mask, null);
         ImageView Image=v.findViewById(R.id.Image);
         TextView Name=v.findViewById(R.id.textName);
-        TextView Price=v.findViewById(R.id.textPrice);
+        TextView Count=v.findViewById(R.id.textCount);
 
         mask mask=maskList.get(i);
         Name.setText(mask.getName());
-        Price.setText(Integer.toString(mask.getCount()));
+        Count.setText(Integer.toString(mask.getCount()));
         Image.setImageBitmap(getUserImage(mask.getImage()));
 
         v.setOnClickListener(new View.OnClickListener() {

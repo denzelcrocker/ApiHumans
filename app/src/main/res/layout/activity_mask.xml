@@ -10,7 +10,7 @@
         android:id="@+id/Image"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:src="@drawable/cocktail"
+        android:src="@drawable/human"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
@@ -28,13 +28,13 @@
         android:ellipsize="end"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/textPrice"
+        app:layout_constraintEnd_toStartOf="@+id/textCount"
         app:layout_constraintStart_toEndOf="@+id/Image"
         app:layout_constraintTop_toTopOf="@+id/Image"
-        tools:text="Название коктеля" />
+        tools:text="ФИО" />
 
     <TextView
-        android:id="@+id/textPrice"
+        android:id="@+id/textCount"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -45,6 +45,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textName"
         app:layout_constraintTop_toTopOf="@+id/Image"
-        tools:text="Цена" />
+        tools:text="Возраст" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

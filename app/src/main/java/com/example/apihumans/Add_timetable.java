@@ -153,7 +153,7 @@ public class Add_timetable extends AppCompatActivity {
                 Toast.makeText(Add_timetable.this, "Запись добавлена", Toast.LENGTH_SHORT).show();
                 Name.setText("");
                 Count.setText("");
-                imageButton.setImageResource(R.drawable.cocktail);
+                imageButton.setImageResource(R.drawable.human);
                 DataModal responseFromAPI = response.body();
 
             }
