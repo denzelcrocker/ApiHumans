@@ -90,8 +90,8 @@ public class Add_timetable extends AppCompatActivity {
     public  void Add(View v)
     {
         AlertDialog.Builder builder=new AlertDialog.Builder(Add_timetable.this);
-        builder.setTitle("Добвить")
-                .setMessage("Вы уверены что хотите добавить данные")
+        builder.setTitle("Добавление")
+                .setMessage("Подтвердите добавление")
                 .setCancelable(false)
                 .setPositiveButton("Да", new DialogInterface.OnClickListener() {
                     @Override
@@ -150,7 +150,7 @@ public class Add_timetable extends AppCompatActivity {
         call.enqueue(new Callback<DataModal>() {
             @Override
             public void onResponse(Call<DataModal> call, Response<DataModal> response) {
-                Toast.makeText(Add_timetable.this, "Запись добавлена", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Add_timetable.this, "Вы добавили запись", Toast.LENGTH_SHORT).show();
                 Name.setText("");
                 Count.setText("");
                 imageButton.setImageResource(R.drawable.human);

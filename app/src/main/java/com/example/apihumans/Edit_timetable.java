@@ -116,7 +116,7 @@ public class Edit_timetable extends AppCompatActivity {
     {
         AlertDialog.Builder builder=new AlertDialog.Builder(Edit_timetable.this);
         builder.setTitle("Изменение")
-                .setMessage("Вы уверены что хотите изменить данные")
+                .setMessage("Подтвердите изменение")
                 .setCancelable(false)
                 .setPositiveButton("Да", new DialogInterface.OnClickListener() {
                     @Override
@@ -156,7 +156,7 @@ public class Edit_timetable extends AppCompatActivity {
         call.enqueue(new Callback<DataModal>() {
             @Override
             public void onResponse(Call<DataModal> call, Response<DataModal> response) {
-                Toast.makeText(Edit_timetable.this, "Запись изменена", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Edit_timetable.this, "Вы изменили запись", Toast.LENGTH_SHORT).show();
                 DataModal responseFromAPI = response.body();
             }
 
@@ -170,8 +170,8 @@ public class Edit_timetable extends AppCompatActivity {
     public void Delete_bt(View v)
     {
         AlertDialog.Builder builder=new AlertDialog.Builder(Edit_timetable.this);
-        builder.setTitle("Удалить")
-                .setMessage("Вы уверены что хотите Удалить данные")
+        builder.setTitle("Удаление")
+                .setMessage("Подтвердите удаление")
                 .setCancelable(false)
                 .setPositiveButton("Да", new DialogInterface.OnClickListener() {
                     @Override
@@ -213,7 +213,7 @@ public class Edit_timetable extends AppCompatActivity {
         call.enqueue(new Callback<DataModal>() {
             @Override
             public void onResponse(Call<DataModal> call, Response<DataModal> response) {
-                Toast.makeText(Edit_timetable.this, "Запись удалена", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Edit_timetable.this, "Вы удалили запись", Toast.LENGTH_SHORT).show();
                 DataModal responseFromAPI = response.body();
             }
 
